@@ -1,0 +1,19 @@
+#include<stdio.h>
+int  main(){
+	int num,originalnum,result=0,rem;
+	printf("ente rthe number");
+	scanf("%d",&num);
+	originalnum=num;
+	while(originalnum!=0){
+		rem=num%10;
+		result+=rem*rem*rem;
+		num/=10;
+	}
+	if(result==num){
+		printf("%d is armstrong number",num);
+		
+	}
+	else
+printf("%d is not is armstrong number",num);
+return 0;
+}
